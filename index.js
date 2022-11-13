@@ -16,5 +16,10 @@ let addProduct=document.getElementById("addProduct");
 addProduct.addEventListener("click", newPage);
 function newPage(){
     console.log("GoTo new Page");
-    location.href = "addproduct.xsl";
+    let table=document.getElementById("addp");
+    if (table.style.display === "none") {
+        table.style.display = "block";
+      } else {
+        table.style.display = "none";
+      }
 }
