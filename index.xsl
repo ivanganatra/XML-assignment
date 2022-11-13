@@ -14,17 +14,28 @@ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
                   <th>Delivery</th>
                </tr>
                <xsl:for-each select = "class/employee">
-               <xsl:sort select = "lastname"/>
-                     <tr>
-                     <td><xsl:value-of select = "Name"/></td>
-                     <td><xsl:value-of select = "Price"/></td>
-                     <td><xsl:value-of select = "Discount"/></td>
-                     <td><xsl:value-of select = "Supplier"/></td>
-                     <td><xsl:value-of select = "Delivery"/></td>
+                  <xsl:sort select = "lastname"/>
+                  <tr>
+                     <td>
+                        <xsl:value-of select = "Name"/>
+                     </td>
+                     <td>
+                        <xsl:value-of select = "Price"/>
+                     </td>
+                     <td>
+                        <xsl:value-of select = "Discount"/>
+                     </td>
+                     <td>
+                        <xsl:value-of select = "Supplier"/>
+                     </td>
+                     <td>
+                        <xsl:value-of select = "Delivery"/>
+                     </td>
                   </tr>
                </xsl:for-each>
             </table>
-            <div>
+            <div style="display: flex;justify-content: space-between;margin-top: 10px;height: 50px;">
+               <button type = "button">Add Product</button>
                <button type = "button">Show Products</button>
                <button type = "button">Edit Products</button>
                <button type = "button">Delete products</button>
@@ -33,5 +44,5 @@ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
             </div>
          </body>
       </html>
-  </xsl:template>
+   </xsl:template>
 </xsl:stylesheet>
