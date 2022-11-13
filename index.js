@@ -1,3 +1,4 @@
+// Show Product
 let store=document.getElementById("showProduct");
 store.addEventListener("click", toogleProductList);
 function toogleProductList(){
@@ -8,4 +9,12 @@ function toogleProductList(){
       } else {
         table.style.display = "none";
       }
+}
+
+// Add Product
+let addProduct=document.getElementById("addProduct");
+addProduct.addEventListener("click", newPage);
+function newPage(){
+    console.log("GoTo new Page");
+    location.href = "addproduct.xsl";
 }

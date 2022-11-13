@@ -36,7 +36,7 @@
                     </table>
                 </div>
                 <div style="display: flex;justify-content: space-between;margin-top: 10px;height: 50px;">
-                    <button type="button">Add Product</button>
+                    <button id="addProduct" type="button">Add Product</button>
                     <button id="showProduct" type="button">Show Products</button>
                     <button type="button">Edit Products</button>
                     <button type="button">Delete products</button>
