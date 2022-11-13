@@ -2,21 +2,24 @@
 <?xml-stylesheet type = "text/xsl" href = "index.xsl"?>
 <class>
    <employee id = "001">
-      <firstname>Aryan</firstname>
-      <lastname>Gupta</lastname>
-      <nickname>Raju</nickname>
-      <salary>30000</salary>
+      <Name>Pencil</Name>
+      <Price>100</Price>
+      <Discount>10</Discount>
+      <Supplier>Raju Electronics</Supplier>
+      <Delivery>Free Delivery</Delivery>
    </employee>
    <employee id = "024">
-      <firstname>Sara</firstname>
-      <lastname>Khan</lastname>
-      <nickname>Zoya</nickname>
-      <salary>25000</salary>
+      <Name>Pen</Name>
+      <Price>200</Price>
+      <Discount>50</Discount>
+      <Supplier>Rajiv Electronics</Supplier>
+      <Delivery>Home Delivery</Delivery>
    </employee>
    <employee id = "056">
-      <firstname>Peter</firstname>
-      <lastname>Symon</lastname>
-      <nickname>John</nickname>
-      <salary>10000</salary>
+   <Name>Eraser</Name>
+      <Price>200</Price>
+      <Discount>30</Discount>
+      <Supplier>Mittal and Mittals</Supplier>
+      <Delivery>Pickup Delivery</Delivery>
    </employee>
 </class>
