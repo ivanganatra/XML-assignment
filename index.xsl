@@ -24,6 +24,13 @@ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
                   </tr>
                </xsl:for-each>
             </table>
+            <div>
+               <button type = "button">Show Products</button>
+               <button type = "button">Edit Products</button>
+               <button type = "button">Delete products</button>
+               <button type = "button">Update products</button>
+               <button type = "button">Product count</button>
+            </div>
          </body>
       </html>
   </xsl:template>
