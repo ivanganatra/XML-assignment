@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+   <product>
+      <id>1</id>
+      <name>TV</name>
+      <price>500</price>
+      <discount>20</discount>
+      <seller>AST Electronics</seller>
+      <delivery>$1@ Delivery Charges</delivery>
+   </product>
+   <product>
+      <id>2</id>
+      <name>Microwave</name>
+      <price>110</price>
+      <discount>10</discount>
+      <seller>KJH Electronics</seller>
+      <delivery>Free</delivery>
+   </product>
+   <product>
+      <id>3</id>
+      <name>Refrigerator</name>
+      <price>310</price>
+      <discount>35</discount>
+      <seller>JHB Electronics</seller>
+      <delivery>$30 Delivery Charges</delivery>
+   </product>
+</products>

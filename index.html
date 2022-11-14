@@ -1,20 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body onload="displayResult()">
-            <h2>Electrical Store System</h2>
-            <div id="table">
+  <head>
+    <title>Electronics Store</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use. fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-
+50oBUHEmvpQ+11W4y57PTFmhCaxp0ML5d66M1M7uH2+nqUivzlebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    
+  </head>
+  <body>
+    <div class="heading" id="heading">
+      <div>Electronics Store <i class="fas fa-plug"></i></div>
+    </div>
+    <div class="btns">
+      <button id="show-btn">Show Products</button>
+      <button id="add-btn" onclick="openForm()">Add Product</button>
+      <button id="delete-btn" onclick="deleteProduct()">Delete Product</button>
+      <button id="update-btn" onclick="updateProduct()">Update Product</button>
+      <button id="count-btn" onclick="countProduct()">Product Count</button>
+    </div>
 
-            </div>
-            <div style="display: flex;justify-content: space-between;margin-top: 10px;height: 50px;">
-                <button id="addProduct" type="button">Add Product</button>
-                <button id="showProduct" type="button">Show Products</button>
-                <button type="button">Edit Products</button>
-                <button type="button">Delete products</button>
-                <button type="button">Update products</button>
-                <button type="button">Product count</button>
-            </div>
-        <script src="index.js"></script>
-    </body>
+    <div class="product-count" id="product-count">
+      <div id="pcount"></div>
+
+      <button class="count-close" onclick="countClose()">Close</button>
+    </div>
+
+    <div class="products">
+      <table id="product-table"></table>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <h1>Add a Product</h1>
+      <input
+        type="text"
+        id="proname"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Product Name"
+        required
+      />
+      <input
+        type="number"
+        id="price"
+        class="form-control"
+        autocomplete="o0ff"
+        placeholder="Price"
+        required
+      />
+      <input
+        type="number"
+        id="discount"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Discount"
+        required
+      />
+      <input
+        type="text"
+        id="seller"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Seller"
+        required
+      />
+      <input
+        type="text"
+        id="delivery"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Delivery"
+        required
+      />
+      <br />
+      <div id="warning"></div>
+      <br />
+      <button class="add-form-btns" id="add-product" onclick="addProduct()">
+        Add
+      </button>
+      <button class="add-form-btns" onclick="closeForm()">Close</button>
+    </div>
+    <div class="form-popup" id="update-form">
+      <h1>Update a Product</h1>
+      <input
+        type="text"
+        id="userid"
+        class="form-control"
+        autocomplete="off"
+        readonly="readonly"
+        placeholder="ID"
+      />
+      <input
+        type="text"
+        id="u_proname"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Product Name"
+        required
+      />
+      <input
+        type="number"
+        id="u_price"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Price"
+        required
+      />
+      <input
+        type="number"
+        id="u_discount"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Discount"
+        required
+      />
+      <input
+        type="text"
+        id="u_seller"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Seller"
+        required
+      />
+      <input
+        type="text"
+        id="u_delivery"
+        class="form-control"
+        autocomplete="off"
+        placeholder="Delivery"
+        required
+      />
+      <br />
+      <div id="update-warning"></div>
+      <br />
+      <button class="update-form-btns" id="update-product">Update</button>
+      <button class="update-form-btns" onclick="closeUdateForm( )">
+        Close
+      </button>
+    </div>
+    
+  <script src="./index.js"></script>
+  </body>
 </html>

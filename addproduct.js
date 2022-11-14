@@ -35,3 +35,15 @@ window.onload=function() {
    console.log(productname,price,discount,supplier,delivery);
 
 });
+
+function countProduct(){
+   pcount = xmlDoc.getElementsByTagName("employee").length;
+   document.getElementById("product-count").innerHTML = pcount + "products are there in xml";
+   let table=document.getElementById("product-count");
+    if (table.style.display === "none") {
+        table.style.display = "block";
+      } else {
+        table.style.display = "none";
+      }
+
+}

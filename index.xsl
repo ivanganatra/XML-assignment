@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-        <table id="newTable" border="1">
+        <table id="newTable" border="1" style="display : none;">
             <tr bgcolor="pink">
                 <th onclick="sortTable(0)" name="a">Product Name</th>
                 <th onclick="sortTable(1)" name="b">Price</th>
